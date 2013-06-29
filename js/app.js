@@ -33,8 +33,8 @@
 			"tap .manage": "manage",
 			"tap .settings": "settings",
 			"tap .syncnow": "sync",
-			"swiperight table": "prev",
-			"swipeleft table": "next"
+			// "swiperight table": "prev",
+			// "swipeleft table": "next"
 		},
 		init: function() {
 
