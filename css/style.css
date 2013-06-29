@@ -1,0 +1,113 @@
+
+
+body.showpicker div.controllerbar { display: none;}
+body.showpicker div.lowerbar { display: none;}
+body.showpicker div.matrix { display: none;}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+p.message {
+	padding: .4em;
+	margin: 4px 0px;
+	background: #ffc;
+	color: #330;
+	border-top: 1px solid #977;
+	border-bottom: 1px solid #977;
+}
+
+table {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-collapse:collapse;
+	
+	width:  100%;
+
+	font-family: "Helvetica", sans-serif;
+}
+
+
+table th {
+	font-weight: normal;
+	background: #fafafa;
+}
+table td {
+	background: white;
+}
+th.context {
+	font-size: 88%;
+}
+table tr td, table tr th {
+
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+}
+th.projectName {
+	text-align: right;
+	/*font-weight: bolder;*/
+	font-family: "Arial Narrow", Helvetica, sans-serif;
+}
+
+th.projectName.tot {
+	font-weight: bolder;
+	color: #a88;
+	background: #f3f3f3;
+}
+td.datetot {
+	background: #f3f3f3;
+	color: #a88;
+}
+
+th.intervalH {
+	font-size: 90%;
+}
+th.intervalH.nowcol, td.datacell.nowcol {
+	color: #833;
+}
+td.datacell.less {
+	background: #eef;
+}
+td.datacell.more {
+	background: #fee;
+}
+
+th.intervalH, td.datacell, td.datetot {
+	width: 10%;
+	text-align: center;
+}
+body.level0 td.datacell { font-size: 100%; }
+body.level1 td.datacell { font-size: 90%; }
+body.level2 td.datacell { font-size: 88%; }
+body.level3 td.datacell { font-size: 86%; }
+
+table tr td.datacell {
+	cursor: hand;
+	cursor: pointer;
+}
+
+
+table.pickertable tr.topbar td {
+	background: #eee;
+}
+table.pickertable {
+	position: absolute;
+	background: white;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	z-index: 10;
+
+	border: none;
+
+	font-size: 300%;
+	text-align: center;
+}
+table.pickertable tr td.selected {
+	background: #444;
+	color: #fff;
+}
