@@ -1,9 +1,4 @@
-# PMatrix
+# Project Matrix
 
-
-Year (x1)
-Month (x4)
-Week (x4)
-Days (x7)
-
+An web application for tracking time.
 
