@@ -248,8 +248,8 @@
 			
 			$(this.container).addClass("showpicker");
 
-			this.picker = new PMPicker(oldvalue);
-			$(this.container).append(this.picker.el);
+			this.picker = new PMPicker(this.container, oldvalue);
+			// $(this.container).append(this.picker.el);
 
 			this.picker.bind("selected", $.proxy(function(value) {
 				$(that.container).removeClass("showpicker");
