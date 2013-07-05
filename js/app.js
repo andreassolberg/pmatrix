@@ -272,6 +272,8 @@
 		e.preventDefault();
 		console.log("Setup manage...");
 
+		// Check if a manager object is instanciated already, if so use it
+		// if not create a new...
 		if (!this.manager) {
 			this.manager = new PMManage($("body"), s);
 
