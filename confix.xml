@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+
+        id        = "org.uwap.feed"
+        version   = "2.0.0">
+    <name>Project Matrix</name>
+
+    <description>
+        Project Matrix is a very simple and easy to use application to keep track of which project you spend time on during your work day. Entering data is done by very few clicks.
+    </description>
+
+    <author href="http://erlang.no" email="andreas@solweb.no">
+        Andreas Åkre Solberg
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
+
+<!--
+    <icon src="icon.png" />
+    <icon src="res/icons/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="res/icons/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="res/icons/android/icon-72-hdpi.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="res/icons/android/icon-96-xhdpi.png"  gap:platform="android"    gap:density="xhdpi" />
+    <icon src="res/icons/blackberry/icon-80.png"     gap:platform="blackberry" />
+    <icon src="res/icons/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
+
+-->
+    <icon src="res/icons/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icons/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icons/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icons/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
+    <!--
+    <icon src="res/icons/webos/icon-64.png"          gap:platform="webos" />
+    <icon src="res/icons/windows-phone/icon-48.png"  gap:platform="winphone" />
+    <icon src="res/icons/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
+
+
+    <gap:splash src="res/splash/android/screen-ldpi-portrait.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="res/splash/android/screen-mdpi-portrait.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="res/splash/android/screen-hdpi-portrait.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="res/splash/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="res/splash/blackberry/screen-225.png"         gap:platform="blackberry" />
+-->
+    <!-- <gap:splash src="res/splash/ios/Default~iphone.png"            gap:platform="ios"     width="320" height="480" /> -->
+    <!-- <gap:splash src="res/splash/ios/Default@2x~iphone.png"         gap:platform="ios"     width="640" height="960" /> -->
+    <gap:splash src="res/splash/ios/Default-Portrait~ipad.png"     gap:platform="ios"     width="768" height="1024" />
+    <!-- <gap:splash src="res/splash/ios/Default-Landscape~ipad.png"    gap:platform="ios"     width="1024" height="768" /> -->
+<!--
+    <gap:splash src="res/splash/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
+-->
+
+
+<!--     <gap:plugin name="ChildBrowser" /> -->
+    <!-- <gap:plugin name="GenericPush" /> -->
+    
+</widget>
