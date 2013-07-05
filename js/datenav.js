@@ -222,6 +222,8 @@
 		runner.align();
 		this.currentKey = null;
 
+		this.todaystamp = this.dstring(new Date());
+
 		// For each of the columns in the matrix, collect an array of keys
 		for(i = 0; i < this.intervalCounts[this.level]; i++) {
 			intervalkeys = [];
