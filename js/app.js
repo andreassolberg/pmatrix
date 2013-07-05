@@ -68,8 +68,8 @@
 		$('<input data-role="button" data-inline="true" data-icon="arrow-l" class="prev" type="button" value="Previous" />').appendTo(controllerbar).button();
 		$('<input data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" class="next" type="button" value="Next" />').appendTo(controllerbar).button();
 		
-		this.matrix = new PMMatrix();
-		$(this.container).append(this.matrix.el);
+		this.matrix = new PMMatrix(this.container);
+		// $(this.container).append(this.matrix.el);
 
 		var middlebar = $('<div class="lowerbar"></div>').appendTo(this.container);
 		$('<input data-role="button" data-inline="true" data-icon="star" class="today" type="button" value="Today" />').appendTo(middlebar).button();
@@ -273,11 +273,11 @@
 		console.log("Setup manage...");
 
 		if (!this.manager) {
-			this.manager = new PMManage({}, s);
+			this.manager = new PMManage($("body"), s);
 
 			this.manager.bind("changed", $.proxy(this.update, this));
 			//$(this.container).append(manager.el);
-			$("body").append(this.manager.el);
+			// $("body").append(this.manager.el);
 			console.log("Setup manage... done");
 		} else {
 			this.manager.update(false);
@@ -293,7 +293,7 @@
 		console.log("Setup settings...");
 
 		if (!this.settings) {
-			this.settings = new PMSettings({}, s);
+			this.settings = new PMSettings(this.container, s);
 
 			this.settings.bind("changed", $.proxy(this.update, this));
 			this.settings.bind("syncnow", $.proxy(this.sync, this));
