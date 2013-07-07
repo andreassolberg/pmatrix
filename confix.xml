@@ -31,6 +31,7 @@
     <icon src="res/icons/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
 
 -->
+    <icon src="icon.png" /><!-- default; don't change location! -->
     <icon src="res/icons/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="res/icons/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
     <icon src="res/icons/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
