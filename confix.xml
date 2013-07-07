@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
 
-        id        = "no.erlang.projectmatrix2"
+        id        = "no.solweb.apps.ProjectMatrix"
         version   = "2.0.0">
     <name>Project Matrix</name>
 
